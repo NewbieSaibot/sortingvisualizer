@@ -725,16 +725,16 @@ void qsortiter(NArray* na, SortData* sdata, QSortData** qsdata) {
                 na->nodes[i]->col = N_SRTD;
 
                 if (i + 1 < r) {
-                    size_t l = i + 1;
-                    size_t r = r;
-                    stkpush((*qsdata)->st, &l);
-                    stkpush((*qsdata)->st, &r);
+                    size_t le = i + 1;
+                    size_t ri = r;
+                    stkpush((*qsdata)->st, &le);
+                    stkpush((*qsdata)->st, &ri);
                 }
                 if (l < i) {
-                    size_t l = l;
-                    size_t r = i;
-                    stkpush((*qsdata)->st, &l);
-                    stkpush((*qsdata)->st, &r);
+                    size_t le = l;
+                    size_t ri = i;
+                    stkpush((*qsdata)->st, &le);
+                    stkpush((*qsdata)->st, &ri);
                 }
 
                 (*qsdata)->jstcmpd = false;
