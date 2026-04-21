@@ -2,7 +2,7 @@
 
 Sorting visualizer written in C using raylib and raygui
 
-![Video](https://github.com/NewbieSaibot/sortingvisualizer)
+![Video](https://github.com/NewbieSaibot/sortingvisualizer/assets/sortingvisualizervid.mp4)
 
 ## Dependencies
 
