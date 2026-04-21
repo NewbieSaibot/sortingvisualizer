@@ -194,8 +194,6 @@ void bubblesortiter(NArray* na, SortData* sdata, BubbleSortData** bsdata) {
 
 	crreset(sdata, na);
 
-	printf("%zu\n", (*bsdata)->n);
-
 	if ((*bsdata)->i < (*bsdata)->n) {
 		if (!(*bsdata)->jstcmpd) {
 			(*bsdata)->c = ncmp(na->nodes[(*bsdata)->i - 1], na->nodes[(*bsdata)->i], 
